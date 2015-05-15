@@ -1,0 +1,6 @@
+C:\Development\Visual Studio\WcfTest\NetTcpClient\bin\Debug\NetTcpClient.exe.config
+C:\Development\Visual Studio\WcfTest\NetTcpClient\bin\Debug\NetTcpClient.exe
+C:\Development\Visual Studio\WcfTest\NetTcpClient\bin\Debug\NetTcpClient.pdb
+C:\Development\Visual Studio\WcfTest\NetTcpClient\obj\Debug\NetTcpClient.exe
+C:\Development\Visual Studio\WcfTest\NetTcpClient\obj\Debug\NetTcpClient.pdb
+C:\Development\Visual Studio\WcfTest\NetTcpClient\obj\Debug\NetTcpClient.csprojResolveAssemblyReference.cache

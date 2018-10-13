@@ -55,15 +55,15 @@ namespace NetTcpServer
       serviceHost.AddServiceEndpoint(typeof(IService1), binding, target);
       serviceHost.Credentials.WindowsAuthentication.AllowAnonymousLogons = false;
 
-      /*var throttlingBehavior = serviceHost.Description.Behaviors.Find<ServiceThrottlingBehavior>();
+      var throttlingBehavior = serviceHost.Description.Behaviors.Find<ServiceThrottlingBehavior>();
       if (throttlingBehavior == null)
       {
         throttlingBehavior = new ServiceThrottlingBehavior();
         serviceHost.Description.Behaviors.Add(throttlingBehavior);
       }
-      //ServiceThrottlingBehavior.MaxConcurrentSessions = 2;
-      */
-
+      throttlingBehavior.MaxConcurrentCalls = 512;
+      throttlingBehavior.MaxConcurrentSessions = int.MaxValue;
+      throttlingBehavior.MaxConcurrentInstances = 0; // ignored due to single instance
 
       serviceHost.Open();
 
